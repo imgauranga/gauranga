@@ -1,51 +1,61 @@
-<!DOCTYPE html><html lang="bn"><head>  <meta charset="UTF-8">  <meta name="theme-color" content="#141b2d"/>  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>  <meta name="viewport" content="width=device-width, initial-scale=1.0">  <link href='https://imgh.in/host/2qq5af' rel='icon' type='image/x-icon'/>  <link href='https://imgh.in/host/2qq5af' rel='icon' sizes='32x32' type='image/png'/>  <link href='https://imgh.in/host/2qq5af' rel='icon' sizes='16x16' type='image/png'/>       <title>Gauranga</title>    <style> select { -webkit-tap-highlight-color: transparent;}    :root {      --bg: #0b0f19;      --card: #141b2d;      --card-hover: #1f2942;      --text-main: #f3f4f6;      --text-muted: #9ca3af;      --accent: #ff4757;      --accent-glow: rgba(255, 71, 87, 0.15);      --gradient: linear-gradient(135deg, #ff4757, #ff6b81);      --border: rgba(255, 255, 255, 0.05);    }
+
+<!DOCTYPE html><html lang="bn"><head>  <meta charset="UTF-8">  <meta name="theme-color" content="#B5CEE7"/>  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>  <meta name="viewport" content="width=device-width, initial-scale=1.0">  <link href='https://imgh.in/host/2qq5af' rel='icon' type='image/x-icon'/>  <link href='https://imgh.in/host/2qq5af' rel='icon' sizes='32x32' type='image/png'/>  <link href='https://imgh.in/host/2qq5af' rel='icon' sizes='16x16' type='image/png'/>       <title>Gauranga</title>    <style>
+@import url('https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&display=swap');
+
+ select { -webkit-tap-highlight-color: transparent;}    :root {      --bg: #ffffff;      --card: #F3F9FF;      --card-hover: #1f2942;      --text-main: #333333;      --text-muted: #333333;      --accent: #333333;      --accent-glow: rgba(255, 71, 87, 0.15);      --gradient: linear-gradient(135deg, #ff4757, #ff6b81);      --border: rgba(255, 255, 255, 0.05);    }
    
 
 
- body {    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;       background-color: var(--bg);       color: var(--text-main);       margin: 0;       padding: 0;       min-height: 100vh;       background-image:           radial-gradient(circle at 10% 20%, rgba(255, 71, 87, 0.03) 0%, transparent 40%),        radial-gradient(circle at 90% 80%, rgba(0, 242, 254, 0.02) 0%, transparent 40%);    -webkit-tap-highlight-color: transparent;  -webkit-touch-callout: none; }
+ body {      color: var(--text-main);       margin: 0;       padding:0px;       min-height: 100vh;  -webkit-tap-highlight-color: transparent;  -webkit-touch-callout: none; }
     
-    /* Premium Header */ .nav { background:#141b2d; backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); padding: 1.2rem 6px; text-align: center; position: sticky; top: 0; z-index: 100; border-bottom: 1px solid var(--border); } .nav-container { max-width: 700px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 1rem; }
-    .nav h1 { margin: 0; font-size: 1.5rem; font-weight: 700; letter-spacing: -0.5px; background: var(--gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; display: flex; align-items: center; gap: 0.5rem; } .bi-journal-text { fill: url(#gradient-fill); margin-bottom: -2px; }
     
     /* Premium Dropdown Style */ .filter-wrapper { position: relative; }
-    .year-select { padding: 0.5rem 1rem; font-size: 0.9rem; font-weight: 500; border-radius: 20px; border: 1px solid rgba(255, 255, 255, 0.1); background-color: rgba(255, 255, 255, 0.05); color: var(--text-main); cursor: pointer; outline: none; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); -webkit-appearance: none; -moz-appearance: none; appearance: none; }
-    .year-select:hover, .year-select:focus { border-color: var(--accent); background-color: rgba(255, 255, 255, 0.08); box-shadow: 0 0 12px var(--accent-glow); }
+    .year-select {width :100%; padding:15px 1rem; font-size: 0.9rem; font-weight: 500; border-radius: 30px; border: 1px solid #B5CEE7; background: #F3F9FF; color: var(--text-main); cursor: pointer; outline: none; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); -webkit-appearance: none; -moz-appearance: none; appearance: none; }
+    
     .year-select option { background-color: var(--card); color: var(--text-main); }
 
-    .container {       max-width: 700px;       margin: 2.5rem auto;       padding: 0 1rem;     }
-    .post-card {       background: var(--card);       padding: 2.2rem;       border-radius: 16px;       margin-bottom: 2rem;       border: 1px solid var(--border);       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);       transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;       animation: fadeIn 0.6s ease-out both;     }
-    .post-card:hover {       transform: translateY(-4px);       border-color: rgba(255, 71, 87, 0.3);       box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35), 0 0 15px rgba(255, 71, 87, 0.05);     }
-    .post-title {       font-size: 1.65rem;       font-weight: 700;       margin-top: 0;       margin-bottom: 0.6rem;       color: var(--text-main);       letter-spacing: -0.3px;       line-height: 1.3;     }
+    .container {    max-width: 700px;       margin: 30px 3px;       padding: 0 1rem;     }
+    .post-card {   position: relative ;  background: var(--card);       padding: 2rem 25px;       border-radius: 16px;       margin-bottom: 2rem;       border: 1px solid var(--border);      transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;       animation: fadeIn 0.6s ease-out both;     }
+ 
+    .post-title { font-family: "Atma", system-ui;
+  font-weight: 600;
+  font-style: normal;      font-size: 1.65rem;      margin-top: 0;       margin-bottom: 0.6rem;       color: var(--text-main);       letter-spacing: -0.3px;       line-height: 1.3;     }
     .post-meta {       font-size: 0.85rem;       color: var(--text-muted);       margin-bottom: 1.8rem;       display: flex;       align-items: center;       justify-content: space-between;     }        .post-meta svg {       color: var(--accent);     }
     
     /* Modern SVG Audio Button */
-    .audio-control-btn {       background: var(--gradient);       border: none;       color: white;       width: 36px;       height: 36px;       border-radius: 50%;       cursor: pointer;       display: flex;       align-items: center;       justify-content: center;       box-shadow: 0 4px 10px rgba(255, 71, 87, 0.2);       transition: all 0.2s ease;       padding: 0;    }    .audio-control-btn:hover {       transform: scale(1.08);       box-shadow: 0 4px 15px rgba(255, 71, 87, 0.4);     }    .audio-control-btn.playing {       background: #2ed573;       box-shadow: 0 4px 10px rgba(46, 213, 115, 0.2);     }    .audio-control-btn svg {       fill: white;       width: 14px;       height: 14px;       transition: transform 0.1s ease;    }
+    .audio-control-btn {       background:#B5CEE7;       border: none;       color: white;       width: 36px;       height: 36px;       border-radius: 50%;       cursor: pointer;       display: flex;       align-items: center;       justify-content: center;              transition: all 0.2s ease;       padding: 0;    }    .audio-control-btn:hover {       transform: scale(1.08);    }    .audio-control-btn.playing {       background: #2ed573;    }    .audio-control-btn svg {       fill: white;       width: 24px;       height: 24px;       transition: transform 0.1s ease;    }
     
-    .post-body {       line-height: 1.8;       font-size: 1.05rem;       color: #cbd5e1;       white-space: pre-wrap;     }
+    .post-body {   font-family: "Atma", system-ui;
+  font-weight: 300;
+  font-style: normal;    line-height: 1.8;       font-size: 1.05rem;       color: #333333;       white-space: pre-wrap;     }
     .hidden { display: none !important; }    @keyframes fadeIn {       from { opacity: 0; transform: translateY(15px); }       to { opacity: 1; transform: translateY(0); }     }
-    .loader {        text-align: center;        font-size: 1.1rem;        color: var(--text-muted);        margin-top: 5rem;       display: flex;       flex-direction: column;       align-items: center;       gap: 1rem;     }        .spinner {       width: 30px;       height: 30px;       border: 3px solid rgba(255,71,87,0.1);       border-radius: 50%;       border-top-color: var(--accent);       animation: spin 1s ease-in-out infinite;     }    @keyframes spin {       to { transform: rotate(360deg); }     }html{-webkit-tap-highlight-color: rgba(255, 255, 255, 0);-webkit-user-select: none;-webkit-touch-callout: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}*::-webkit-scrollbar {display: none; }*::-webkit-resizer {display: none;}html {border-top:0.1px solid #212529;scrollbar-color: rgba(0,0,0,0) white;scrollbar-width: thin;}::-webkit-scrollbar {width: 0px;height: 0px;background-color: white;}::-webkit-scrollbar-thumb {background:rgba(0,0,0,0);border-radius: 0px;}  </style></head><body>
+    .loader {        text-align: center;        font-size: 1.1rem;        color: var(--text-muted);        margin-top: 5rem;       display: flex;       flex-direction: column;       align-items: center;       gap: 1rem;     }        .spinner {       width: 30px;       height: 30px;       border: 3px solid rgba(255,71,87,0.1);       border-radius: 50%;       border-top-color: var(--accent);       animation: spin 1s ease-in-out infinite;     }    @keyframes spin {       to { transform: rotate(360deg); }     }html{-webkit-tap-highlight-color: rgba(255, 255, 255, 0);-webkit-user-select: none;-webkit-touch-callout: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}*::-webkit-scrollbar {display: none; }*::-webkit-resizer {display: none;}html { border: 1px solid #B5CEE7;scrollbar-color: rgba(0,0,0,0) white;scrollbar-width: thin;}::-webkit-scrollbar {width: 0px;height: 0px;background-color: white;}::-webkit-scrollbar-thumb {background:rgba(0,0,0,0);border-radius: 0px;}  
+
+
+</style></head><body>
   <svg style="width:0;height:0;position:absolute;" aria-hidden="true" focusable="false"> <linearGradient id="gradient-fill" x1="0%" y1="0%" x2="100%" y2="100%"> <stop offset="0%" stop-color="#ff4757" /> <stop offset="100%" stop-color="#ff6b81" /> </linearGradient> </svg> 
-  
-  <div class="nav">        
-    <div class="nav-container">      
-      <h1> Gauranga </h1> 
-      <div class="filter-wrapper"> <select id="yearFilter" class="year-select" style="display: none;"> <option value="all">All Years</option> </select> </div>
-    </div>  
-  </div>
+ 
+<div style=' padding:30px 16px 0px 16px;'>
+ <select id="yearFilter" class="year-select" style="display: none;"> <option value="all">View All Years</option> </select></div>
+
 
   <div class="container">        
     <div id="loader" class="loader">      
       <div class="spinner"></div>      
-      <span>Waiting.</span>    
+      <span></span>    
     </div>        
-    <div id="blog-posts"></div>    
+    <div id="blog-posts">
+
+</div>    
   </div>  
 
 
-<div id='passwordModal' style='border-top:0.1px solid #141b2d; position:fixed !important;top:0 !important; left:0 !important; width:100% !important; height:100% !important;             backdrop-filter: blur(20px);            
-            -webkit-backdrop-filter: blur(20px);   z-index:999 !important; display:flex !important; justify-content:center !important; align-items:center !important; font-family:Arial, sans-serif !important;'> <div style='background:#141b2d !important; padding:35px 25px!important; border-radius:12px !important; box-shadow:0px 10px 30px rgba(0,0,0,0.5) !important; text-align:center !important; max-width:380px !important; width:86% !important; box-sizing:border-box !important;'> <h3 style='margin:0 0 15px 0 !important; color:#ffffff !important; font-size:22px !important; font-weight:bold !important;'>Website Locked</h3> <p style='color:#eeeeee !important; font-size:14px !important; margin:0 0 20px 0 !important;'>Enter password visit my personal website</p> <input id='passInput' placeholder='Password' style='width:100% !important; padding:12px !important; color:#121212;margin:0 0 15px 0 !important; border:none!important; border-radius:6px !important; box-sizing:border-box !important; font-size:16px !important; outline:none !important; text-align:center !important; background:#efefef !important; opacity:0.8;' type='password'/> <button onclick='checkCustomPassword()' style='width:100% !important; padding:12px !important; background:#F56779 !important; color:white !important; border:none !important; border-radius:6px !important; font-size:16px !important; font-weight:bold !important; cursor:pointer !important; transition:0.3s !important;'>Visit Now</button> <p id='errorMsg' style='color:#ffffff !important; font-size:13px !important; margin:15px 0 0 0 !important; display:none !important; font-weight:bold !important;'> Wrong Password! </p> </div></div>
 
+<div id='passwordModal' style='border-top:0.1px solid #B5CEE7; position:fixed !important;top:0 !important; left:0 !important; width:100% !important; height:100% !important;        background :#ffffff;  z-index:999 !important; display:flex !important; justify-content:center !important; align-items:flex-start !important; font-family:Arial, sans-serif !important;'> 
 
+<div style='background:#C7DBEA!important; padding:40px 25px!important; border-radius:0px 22px 0px 22px !important;text-align:center !important; max-width:380px !important; width:88% !important; box-sizing:border-box !important; margin-top:40px;'> 
+
+<h3 style='margin:0 0 15px 0 !important; color:#333333 !important; font-size:22px !important; font-weight:bold !important;'>Website Locked</h3> <p style='color:#333333 !important; font-size:14px !important; margin:0 0 20px 0 !important;'>Enter password visit my personal website</p> <input id='passInput' placeholder='Password' style='width:100% !important; padding:12px !important; color:#121212;margin:0 0 15px 0 !important; border:none!important; border-radius:6px !important; box-sizing:border-box !important; font-size:16px !important; outline:none !important; text-align:center !important; background:#efefef !important; opacity:0.8;' type='password'/> <button onclick='checkCustomPassword()' style='width:100% !important; padding:12px !important; background:#F3F9FF !important; color:#333333 !important; border:none !important; border-radius:6px !important; font-size:16px !important; font-weight:bold !important; cursor:pointer !important; transition:0.3s !important;'>Visit Now</button> <p id='errorMsg' style='color:#ffffff !important; font-size:13px !important; margin:15px 0 0 0 !important; display:none !important; font-weight:bold !important;'> Wrong Password! </p> </div></div>
 
 
   <script>        
@@ -62,8 +72,12 @@
     let currentPlayingId = null;
 
     // SVG Icons
-    const playIcon = `<svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>`;
-    const pauseIcon = `<svg viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>`;
+    const playIcon = `<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-volume-down" viewBox="0 0 16 16">
+  <path d="M9 4a.5.5 0 0 0-.812-.39L5.825 5.5H3.5A.5.5 0 0 0 3 6v4a.5.5 0 0 0 .5.5h2.325l2.363 1.89A.5.5 0 0 0 9 12zM6.312 6.39 8 5.04v5.92L6.312 9.61A.5.5 0 0 0 6 9.5H4v-3h2a.5.5 0 0 0 .312-.11M12.025 8a4.5 4.5 0 0 1-1.318 3.182L10 10.475A3.5 3.5 0 0 0 11.025 8 3.5 3.5 0 0 0 10 5.525l.707-.707A4.5 4.5 0 0 1 12.025 8"/>
+</svg>`;
+    const pauseIcon = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-volume-mute" viewBox="0 0 16 16">
+  <path d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06M6 5.04 4.312 6.39A.5.5 0 0 1 4 6.5H2v3h2a.5.5 0 0 1 .312.11L6 10.96zm7.854.606a.5.5 0 0 1 0 .708L12.207 8l1.647 1.646a.5.5 0 0 1-.708.708L11.5 8.707l-1.646 1.647a.5.5 0 0 1-.708-.708L10.793 8 9.146 6.354a.5.5 0 1 1 .708-.708L11.5 7.293l1.646-1.647a.5.5 0 0 1 .708 0"/>
+</svg>`;
 
     async function fetchBlogPosts() {            
       try {                
